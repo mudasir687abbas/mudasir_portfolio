@@ -1,0 +1,139 @@
+.project-section{
+    height:110vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.project-container{
+    width:100%;
+    padding:25px 0;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    background:var(--card-bg);
+     box-shadow:var(--card-shadow);
+    
+}
+
+.project-title{
+    font:var(--title-font);
+    color:var(--title-color);
+    
+}
+.project-cards{
+    width:100%;
+    padding:20px 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap:20px;
+    overflow: scroll;
+    
+}
+
+
+ .project-cards::-webkit-scrollbar{
+    display: none;
+}
+
+.project-card{
+    background: white;
+    border-radius: 10px;
+    border:5px solid whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:8px;
+    transition: all 0.5s linear;
+}
+.project-card:hover{
+    scale:1.05;
+    background:rgba(255,255,255,0.2);
+    backdrop-filter: blur(5px);
+    box-shadow: var(--card-shadow);
+}
+.project-card h5{
+    color:var(--text-light);
+}
+.project-card h2{
+    font:var(--heading-font);
+    color:var(--heading-color);
+}
+.project-card p{
+    color:var(--text-light);
+    text-align: justify;
+}
+.project-btns,.project-skills-used,.project-features-used{
+     display:flex;
+     gap:5px;
+}
+
+.project-skills-used{
+    padding-bottom: 5px;
+    border-bottom:1px solid rgba(0,0,0,0.1);
+}
+.project-card span{
+    background-color:whitesmoke;
+    padding:5px;
+    border-radius: 5px;
+    color:var(--text-mid);
+}
+.project-btns{
+    justify-content: space-between;
+}
+.project-btns span{
+    cursor: pointer;
+    padding:5px 8px;
+    background: var(--btn-bg);
+    color:var(--btn-color);
+}
+
+@media (min-width:0px) and (max-width:420px){
+    .project-section{
+        height: max-content;
+    }
+    .project-container{
+        /* width:95%; */
+        padding:20px;
+    }
+    
+    .project-cards{
+        flex-direction: column;
+        align-items: center;
+        padding:20px 0;
+        
+    }
+    .project-card{
+        max-width:300px;
+        width:95%;
+        padding:20px 15px;
+           
+    }
+    
+}
+@media (min-width:421px) and (max-width:768px){
+    .project-card{
+        /* flex:0.5 0 200px; */
+        padding:15px;       
+    }
+    .project-btns span{
+        text-align: center;
+    }
+
+}
+@media (min-width:769px) and (max-width:2000px){
+    .project-container{
+        padding:50px 5px;
+    }
+    .project-cards{
+        padding:10px;
+        justify-content: flex-start;
+    }
+    .project-card{
+        flex:0 0 250px;
+        padding:40px 20px;
+    }
+}
+

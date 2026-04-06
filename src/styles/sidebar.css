@@ -1,0 +1,48 @@
+.sidebar{
+  width:200px;
+  background-color:rgba(255,255,255,1);
+  box-shadow: var(--card-shadow);
+  backdrop-filter: blur(3px);
+  border-radius: var(--card-radius);
+  padding:50px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap:50px;
+  transition:all 1s ease;
+  position: fixed;
+  top:70px;
+  left:102.5vw;
+}
+.sidebar ul{
+  display: flex;
+  flex-direction: column;
+  gap:5px;
+
+}
+.sidebar ul li{
+     padding:8px;
+     border-bottom: 1px solid var(--accent2);
+     border-radius: 10px;
+     display: flex;
+     justify-content: flex-start;
+     gap:5px;
+     padding-left: 30px;
+     
+    }
+    
+    .sidebar ul li a{
+      transition:all 0.3s linear;
+    }
+.sidebar ul li:hover{
+  color:var(--accent2);
+  scale:1.05;
+  border-top: 1px solid var(--accent2);
+  
+}
+
+@media(min-width:769px){
+  .sidebar{
+    display: none;
+  }
+}
