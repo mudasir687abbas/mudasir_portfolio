@@ -10,7 +10,7 @@ function Home() {
       <div className="logo-name">Mudasir Abbas</div>
       <div className="logo-sub">MERN Stack Developer</div>
     </a>
-    <ArrowBigDown className='hamburg' style={{rotate: isShowMenu ? '0deg':'90deg'}} size='35' onClick={()=>{setShowMenu(!isShowMenu)}}/>
+    <ArrowBigDown className='hamburg' style={{rotate: isShowMenu ? '0deg':'-90deg'}} size='35' onClick={()=>{setShowMenu(!isShowMenu)}}/>
     <nav>
       <ul className="nav-links">
         <li><HomeIcon  size='14' color='var(--accent)'/><a href="#home">Home</a></li>
