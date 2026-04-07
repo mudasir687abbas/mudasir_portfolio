@@ -83,8 +83,9 @@
 .project-btns{
     justify-content: space-between;
 }
-.project-btns span{
-    cursor: pointer;
+.project-btns a{
+    text-decoration: none;
+    border-radius: 5px;
     padding:5px 8px;
     background: var(--btn-bg);
     color:var(--btn-color);

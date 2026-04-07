@@ -3,24 +3,15 @@ import '../styles/project.css';
 
 function Project(){
     const projects = [
-       
-        {
-            type:'Frontend',
-            title:'Simple Calculator',
-            description:'It is firest ever project in journy of Web Development',
-            skill:['HTML','CSS-Grid','JS'],
-            features:['basic math-operation'],
-            codeLink : '#',
-            demoLink:'#'
-        },                
+                       
         {
             type:'Frontend',
             title:'To Do List',
             description:'This project is developed using frontend framework to experience crud operation.',
             skill:['ReactJS','LocalStorage','Crud'],
             features:['animation-css','lucide-icons'],
-            codeLink : '#',
-            demoLink:'#'
+            codeLink : 'https://github.com/mudasir687abbas/todolist.git',
+            demoLink:'https://todolist-delta-indol.vercel.app'
         },                
         {
             type:'Frontend',
@@ -28,17 +19,17 @@ function Project(){
             description:'it is simple modern responsive frontent and animated website',
             skill:['ReactJS'],
             features:['animated-css',],
-            codeLink : '#',
-            demoLink:'#'
+            codeLink : 'https://github.com/mudasir687abbas/mudasir_portfolio.git',
+            demoLink:'https://mudasir-portfolio-liard.vercel.app/'
         }     ,   
         {
             type:'Frontend',
             title:'Tic-Tac-Toe Game',
             description:'it is simple modern responsive frontent and animated website',
             skill:['ReactJS'],
-            features:['animated-css','tokken selection','wining-drawing'],
-            codeLink : '#',
-            demoLink:'#'
+            features:['animated-css','real-time turn player','wining-drawing'],
+            codeLink : 'https://github.com/mudasir687abbas/mtictactoe_game.git',
+            demoLink:'https://mtictactoe-game.vercel.app/'
         }     ,
         {
             type:'Frontend-Backend',
@@ -68,8 +59,8 @@ function Project(){
                                 {item.features.map((f)=><span >{f}</span>)}
                              </div>
                             <div className='project-btns'>
-                              <span>View Code</span>
-                              <span>Online Demo</span>
+                              <a href={item.codeLink} target='_blank' className='project-btn'>View Code</a>
+                              <a href={item.demoLink} target='_blank' className='project-btn'>Online Demo</a>
                              </div>
                          </div>
                       ))}
