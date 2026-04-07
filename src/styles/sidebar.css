@@ -9,7 +9,7 @@
   flex-direction: column;
   justify-content: center;
   gap:50px;
-  transition:all 1s ease;
+  transition:all 0.5s linear;
   position: fixed;
   top:70px;
   left:102.5vw;

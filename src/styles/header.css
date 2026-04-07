@@ -29,7 +29,7 @@ header a{
 .hamburg{
     color:var(--accent1);
     border-color:var(--accent);
-    transition: all 1s linear;
+    transition: all 0.5s linear;
 }
 .hamburg:hover{
     cursor: pointer;
