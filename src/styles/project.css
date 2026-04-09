@@ -41,7 +41,7 @@
 .project-card{
     background: white;
     border-radius: 10px;
-    border:5px solid whitesmoke;
+    /* border:5px solid whitesmoke; */
     display: flex;
     flex-direction: column;
     justify-content: center;
