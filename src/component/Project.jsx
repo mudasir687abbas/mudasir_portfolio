@@ -37,8 +37,8 @@ function Project(){
             description:'It is MERN project featured with authentication,sign-signup logics, how they work.',
             skill:['ReactJS','ExpressJs','MongoDB'],
             features:['jwt','context-api'],
-            codeLink : '#',
-            demoLink:'#'
+            codeLink : 'https://github.com/mudasir687abbas/simple_signin_signup_portal.git',
+            demoLink:'https://simple-signin-signup-portal-fronten.vercel.app/'
         }        
     ]
     return(

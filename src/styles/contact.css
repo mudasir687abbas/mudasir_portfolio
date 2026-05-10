@@ -102,7 +102,7 @@ form .input-group{
    gap:20px;
 } 
 .input-btn-group .btn{
-    height:30px;
+    height:35px;
     background:var(--btn-bg);
     font:var(--btn-font);
     border:none;
@@ -112,6 +112,7 @@ form .input-group{
 }
 .input-btn-group .btn:hover{
    scale:1.05;
+   cursor: pointer;
 }
 
 @media (max-width:420px){
